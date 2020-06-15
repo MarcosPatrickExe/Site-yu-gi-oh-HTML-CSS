@@ -1,0 +1,60 @@
+/*estilo do documento site_producao.html:                        */
+
+*{margin: 0px; padding: 0px;}
+
+body{
+	background-image: url("../Imagens/yugi.jpg"); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#box1{background-color: black; width: 100%; height: 120px;}
+
+#caixa2{
+	background-color: #333; 
+	height: 65px; 
+	width: 100%; 
+	border-top: 1px solid orange;
+	border-bottom: 1px solid black;
+}
+
+nav ul li{
+	display: inline-block; 
+	margin-left: 40px; 
+	margin-right: 40px; 
+	padding: 15px;
+	position: relative;
+	left: 275px;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+nav ul li a{text-decoration: none; font-size: 30px; color: white;}
+
+nav ul li:hover{background-color: gray; transition: 2.0s;}
+
+#div3{
+	background-color: white; 
+	margin-top: 50px;
+	margin-bottom: 50px; 
+	border: 2px solid red; 
+	width: 1000px; 
+	height: 2640px;
+    position: absolute;
+    right: 450px;
+}
+
+#texto1{
+	left: 30px;
+	font-family: "Times New Roman";
+	font-size: 60px;
+	text-align: center;
+}
+
+#texto2{
+   font-family: "Times New Roman";
+   font-size: 40px;
+   letter-spacing: 2px;
+   text-align: center;
+}
