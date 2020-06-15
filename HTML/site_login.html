@@ -1,0 +1,132 @@
+<html>
+<head>
+  <title>www.Yu-Gi-Oh!.com/Login</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../CSS/siteEstilo_login.css"> 
+  <!--  <script type="text/javascript" src="DocumentoJavaScript.js"></script> -->
+ <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+
+  <script type="text/javascript">
+    // script da caixa cadastro:
+
+        function validarCadastro(){
+            
+        if (form.nomeC.value == "") || (form.nomeC.value == null){
+            alert("Por favor digite o seu nome.");
+            return false;
+        }
+        if (form.senhaC.value == "") || (form.nomeC.value == null){
+            alert("Por favor digite a senha.");
+            return false;
+        }
+
+        if (form.emailC.value == "") || (form.nomeC.value == null){
+            alert("E-mail inválido!");
+            return false;
+        }
+
+        if (form.estado.selected == 0) || (form.nomeC.value == null){
+            alert("Por favor selecione o estado.");
+            return false;
+
+        }else{
+            alert("Cadastro concluído.");
+            return true;
+          }
+        }
+
+        // script da caixa do login:
+
+        function validarLogin(){
+
+        if (form.nomeL.value == "") || (form.nomeL.value == null){
+            alert("Por favor digite o seu nome.");
+            return false;
+        }
+        if (form.senhaL.value == "") || (form.nomeL.value == null){
+            alert("Por favor digite a senha.");
+            return false;
+        }
+        if (form.confirmacao.value == "") || (form.nomeL.value == null){
+            alert("Por favor digite a senha de confirmação.");
+            return false;
+
+        }else{
+           alert("Acesso permitido.");
+           return true;
+          }
+        }
+  </script>
+
+</head>
+<body>
+  <div id="box1"><img src="../Imagens/Yu-gi-oh.png" width="500px" height="120px" alt="logo do meu site" style="position: absolute; right: 750px;"/>
+  </div>
+
+  <div id="caixa2">
+   	<nav>
+   	  <ul>
+         <li><a href="site.html">Início</a></li>
+         <li><a href="site_historia.html" >História</a></li>
+         <li><a href="site_producao.html" title="Saiba sobre sua produção">Produção</a></li>
+         <li><a href="#" title="Vídeos,filmes e outros">Mídias</a></li>
+         <li><a href="site_comoJogar.html" title="Aprenda como jogar">Como jogar?</a></li>
+         <li><a href="#" style="text-decoration: underline;">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="caixa4">
+      <p id="texto">Cadastro</p><Br /><Br />
+        
+   <form method="POST" onsubmit="validarCadastro()">
+     <h2>Nome: <input type="text" name="nomeC" size="23"></h2><Br /><Br />
+     <h2>Senha: <input type="text" name="senhaC" size="23"></h2><Br /><Br />
+     <h2>E-mail: <input type="text" name="emailC" size="23"></h2><Br /><Br />
+     <h2>Estado:
+     <select size="1" name="estado">
+       <option value="AC">AC</option>
+       <option value="AL">AL</option>
+       <option value="AM">AM</option>
+       <option value="AP">AP</option>
+       <option value="BA">BA</option>
+       <option value="CE">CE</option>
+       <option value="DF">DF</option>
+       <option value="ES">ES</option>
+       <option value="GO">GO</option>
+       <option value="MA">MA</option>
+       <option value="MG">MG</option>
+       <option value="MS">MS</option>
+       <option value="MT">MT</option>
+       <option value="PA">PA</option>
+       <option value="PB">PB</option>
+       <option value="PE">PE</option>
+       <option value="PI">PI</option>
+       <option value="PR">PR</option>
+       <option value="RJ">RJ</option>
+       <option value="RN">RN</option>
+       <option value="RO">RO</option>
+       <option value="RR">RR</option>
+       <option value="RS">RS</option>
+       <option value="SC">SC</option>
+       <option value="SE">SE</option>
+       <option value="SP">SP</option>
+       <option value="TO">TO</option>
+     </select>
+     </p><Br /><Br />
+     <h2><input type="submit" value="Enviar" name="enviar"></h2><Br /><Br />
+     </form>
+     </div>
+     
+     <div id="caixa5">
+     <p id="texto2">Login</p><Br /><Br />
+     <form method="POST" onsubmit="validarLogin()">
+     <h2>Nome: <input type="text" name="nomeL" size="23"></h2><Br /><Br />
+     <h2>Senha: <input type="password" name="senhaL" size="23"></h2><Br /><Br />
+     <h2>Confirme sua senha:  <input type="password" name="confirmacao" size="23"></h2><Br /><Br />
+     <h2><input type="submit" value="Enviar" name="enviar"></h2><Br /><Br />
+     </form>
+     </div>
+</body>
+</html>
